@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Zamishailo Test - Barley-Break</title>
+	</head>
+		<body>
+		<div class="wrapper">
+			<div class="container container_hide">
+			<header class="header">
+				<div class="header__column">
+					<div class="header__counter counter">
+						<div class="counter__time">
+							<span>Time:</span>
+							<span class="time">00:00</span>
+						</div>
+						<div class="counter__tap">
+							<span>Step:</span>
+							<span class="tap">0</span>
+						</div>
+					</div>
+				</div>
+				<div class="header__column">
+					<button class="header__btn" id="startGame">Start / Restart</button>
+				</div>
+			</header>
+			<div class="field">To begin the game please press button <br> start</div>
+			<footer class="footer">
+				<button class="footer__btn btn" id="pause">Pause</button>
+				<button class="footer__btn btn" id="stopGame">Stop</button>
+			</footer>
+			</div>
+			<div class="popup">
+				<div class="container">
+					<div class="popup-pause popup-body">
+						<span class="popup__title">Pause - you can go to rest</span>
+						<button class="popup__btn" id="continue">Сontinue</button>
+					</div>
+					<div class="gameover popup-body">
+						<span class="popup__title">Game over!</span>
+						<div class="counter counter_popup">
+							<div class="counter-time">
+								<span>Time:</span>
+								<span class="time-end">00:00</span>
+							</div>
+							<div class="counter-tap">
+								<span>Step:</span>
+								<span class="tap-end">0</span>
+							</div>
+						</div>
+						<button class="popup__btn" id="newGame">New Game</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="game.js"></script>
+	</body>
+</html>
